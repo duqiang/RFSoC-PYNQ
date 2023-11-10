@@ -35,7 +35,7 @@ Install Xilinx Vivado, Vitis and Petalinux 2022.1 under `/opt/xilinx_2022.1`, wh
 
     ```
     vagrant up focal
-    vagrang ssh
+    vagrant ssh
     ```
 
 6. Inside virtual machine, build bitstream
