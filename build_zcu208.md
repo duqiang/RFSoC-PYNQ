@@ -38,11 +38,18 @@ Install Xilinx Vivado, Vitis and Petalinux 2022.1 under `/opt/xilinx_2022.1`, wh
     vagrant ssh
     ```
 
-6. Inside virtual machine, build bitstream
+6. Inside virtual machine, 
 
+    Setup host:
+    ```
+    ./setup_host.sh
+    ```
+    Re-login.
+
+    Build bitstream:
     ```
     cd /workspace
-    git clone --recursive https://github.com/Xilinx/RFSoC-PYNQ.git
+    git clone --recursive https://github.com/duqiang/RFSoC-PYNQ.git
     cd RFSoC-PYNQ
     make -C boards/ZCU208/base
     ```
