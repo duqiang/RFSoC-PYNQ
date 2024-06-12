@@ -13,7 +13,7 @@ Install Xilinx Vivado, Vitis and Petalinux 2022.1 under `/opt/xilinx_2022.1`, wh
 2. Download BSP
 
     ```
-    wget https://www.xilinx.com/member/forms/download/xef.html?filename=xilinx-zcu208-v2022.1-04191534.bsp -O boards/ZCU208/ZCU208.dsp
+    wget https://www.xilinx.com/member/forms/download/xef.html?filename=xilinx-zcu208-v2022.1-04191534.bsp -O boards/ZCU208/ZCU208.bsp
     ```
 
 3. Download prebuilt images
@@ -43,6 +43,7 @@ Install Xilinx Vivado, Vitis and Petalinux 2022.1 under `/opt/xilinx_2022.1`, wh
     cd /workspace
     git clone --recursive https://github.com/Xilinx/RFSoC-PYNQ.git
     cd RFSoC-PYNQ
+    wget https://www.xilinx.com/member/forms/download/xef.html?filename=xilinx-zcu208-v2022.1-04191534.bsp -O boards/ZCU208/ZCU208.bsp
     make -C boards/ZCU208/base
     ```
 
